@@ -15,7 +15,7 @@ public class IndexController {
 
     @RequestMapping("/")
     String index(Model model) {
-        User user = new User("aleks2", 20);
+        User user = new User("aleks", 20);
         System.out.println(user.toString());
         userRepository.save(user);
 
